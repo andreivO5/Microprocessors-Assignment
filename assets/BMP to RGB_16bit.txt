@@ -1,0 +1,2 @@
+cd C:\Users\blaze\Desktop\college year 2\decko\assets
+python bmptoh.py (image name.bmp)

@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a v, TUD, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.14
+Assembler:       Armasm.exe V6.14
+Linker/Locator:  ArmLink.exe V6.14
+Library Manager: ArmAr.exe V6.14
+Hex Converter:   FromElf.exe V6.14
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TARMCM1.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\blaze\Desktop\decko\decko\project1.uvprojx
+Project File Date:  11/08/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.14', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f031x6.s...
+compiling system_stm32f0xx.c...
+display.c(2): warning: the current #pragma pack alignment value is modified in the included file [-Wpragma-pack]
+#include "font5x7.h"
+         ^
+./font5x7.h(22): note: previous '#pragma pack' directive that modifies alignment is here
+#pragma pack(1)
+        ^
+display.c(3): warning: In file included from...
+./display.h(14): warning: no newline at end of file [-Wnewline-eof]
+uint16_t RGBToWord(uint16_t R, uint16_t G, uint16_t B);
+                                                       ^
+2 warnings generated.
+compiling display.c...
+main.c(19): warning: In file included from...
+./display.h(14): warning: no newline at end of file [-Wnewline-eof]
+uint16_t RGBToWord(uint16_t R, uint16_t G, uint16_t B);
+                                                       ^
+1 warning generated.
+compiling main.c...
+linking...
+Program Size: Code=12450 RO-data=2630 RW-data=0 ZI-data=1640  
+".\Objects\project1.axf" - 0 Error(s), 3 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.0.pack
+                Keil.STM32F0xx_DFP.2.1.0
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\blaze\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\blaze\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+
+   * Component: Keil.Standalone::Device:Startup:1.0.0
+      Include file:  Drivers\CMSIS\Device\ST\STM32F0xx\Include\stm32f0xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F0xx\Source\Templates\arm\startup_stm32f031x6.s
+      Source file:   MDK\Device\Source\ARM\STM32F0xx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F0xx\Source\Templates\system_stm32f0xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
